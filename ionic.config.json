@@ -1,0 +1,7 @@
+{
+  "name": "ageCalc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
