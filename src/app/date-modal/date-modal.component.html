@@ -1,0 +1,33 @@
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Select Date</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-datetime
+        [value]="selectedDate"
+        presentation="date"
+        [max]="selectedDate-1"
+        (ionChange)="onDateChange($event)"
+        preferWheel="true"
+        showDefaultButtons="false"
+      ></ion-datetime>
+    </ion-card-content>
+
+    <ion-grid>
+      <ion-row class="ion-justify-content-between ion-padding-horizontal">
+        <ion-col size="6">
+          <ion-button expand="block" color="medium" (click)="cancel()">
+            Cancel
+          </ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="block" color="primary" (click)="confirmDate()">
+            OK
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

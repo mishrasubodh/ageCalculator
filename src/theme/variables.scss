@@ -1,2 +1,20 @@
-// For information on how to create your own theme, please see:
+// Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+
+ion-content{
+
+  // --ion-background-color:#ffdd4b;
+  --background: linear-gradient(to bottom, #c94b4b, #4b134f);
+}
+ion-item{
+  --ion-background-color:transparent !important;
+}
+ion-header{
+  --ion-background-color: #c74a4b;
+    text-align: center;
+}
+// background-color: #FEE140;
+// background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
